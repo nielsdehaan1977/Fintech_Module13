@@ -1,22 +1,22 @@
 # Fintech_Module13
 
-![credit_risk_loans.jpg](https://github.com/nielsdehaan1977/Fintech_Module12/blob/main/Images/credit_risk_loans.jpg)
+![startup.jpg](https://github.com/nielsdehaan1977/Fintech_Module13/blob/main/Images/startup.jpg)
 
-## Neural Networks. This notebook uses a dataset of historical lending activity from a peer-to-peer lending services company and uses logistic regression on both the original dataset and a resampled data set using RandomOverSampler from imbalanced-learn library. 
+## Neural Networks. This jupyter notebook can be used as a template to create a binary classifier model that can to a certain degree predict whether an applicant will become a successful business. The model utilizes TensorFlow library to design a binary classification deep neural network model. This model use a dataset’s that contains information of more than 34,000 startup organizations and tries to predict whether a startup will be successful based on the features in the dataset. The notebook takes into consideration the number of inputs before determining the number of layers that the model will contain or the number of neurons on each layer. Then it compiles and fits the model and evaluates the binary classification model by calculating the model’s loss and accuracy.
 
-## credit_risk_resampling.ipynb
+
+![Neural_Networks_2.jpg](https://github.com/nielsdehaan1977/Fintech_Module13/blob/main/Images/Neural_Networks_2.jpg)
+
+
+## venture_funding_with_deep_learning.ipynb
 ---
-
-### This notebook can be used as a template to build a model that can identify the creditworthiness of borrowers using and imbalanced dataset (in this case more healthy than unhealthy loans) using supervised learning. 
-
-The tool can help to write a credit risk analysis report.  
+### This notebook can be used as a template to build a model that can be used to predict whether a startup loan applicant will become a succesful business based upon a binary classification model. 
+---
+The tool can help to predict if a startup will become a succesful business. 
 * The tool goes through on the following steps: 
-1. Split Data into Training and Testing Sets
-2. Create a Logistic Regression model with the Original (imbalanced) dataset
-3. Predict a Logistic Regression model with Resampled (Balanced using RandomOverSampler) training data 
-4. Compare Logistic Regression Models results
-5. Provide an example Credit Risk Analysis Report
-
+1. Prepare the data for use on a neural network model.
+2. Compile and evaluate a binary classification model using a neural network.
+3. Optimize the neural network model.
 ---
 ## Table of Content
 
