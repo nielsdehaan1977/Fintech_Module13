@@ -38,6 +38,8 @@ This project leverages python 3.9 and Jupyter Lab with the following packages:
 
 * [JupyterLab](https://jupyter.org/) - Jupyter Lab is the latest web-based interactive development environment for notebooks, code, and data.
 
+* [Path](https://docs.python.org/3/library/pathlib.html) - This module offers classes representing filesystem paths with semantics appropriate for different operating systems.
+
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) - Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
 * [concat](https://pandas.pydata.org/docs/reference/api/pandas.concat.html) - Concatenate pandas objects along a particular axis
@@ -70,8 +72,7 @@ This project leverages python 3.9 and Jupyter Lab with the following packages:
     pip install numpy
     pip install --upgrade tensorflow
     pip install -U scikit-learn
-    
-```
+ ```
 #### Step3: Start Jupyter Lab
 Jupyter Lab can be started by:
 1. Activate your developer environment in Terminal or Git Bash (already done in step 1)
@@ -82,27 +83,30 @@ Jupyter Lab can be started by:
 
 ## Usage
 
-To use the credit_risk_resampling jupyter lab notebook, simply clone the full repository and open the **credit_risk_resampling.ipynb** file in Jupyter Lab. 
+To use the venture funding with deep learning jupyter lab notebook, simply clone the full repository and open the **venture_funding_with_deep_learning.ipynb** file in Jupyter Lab. 
 
 The tool will go through the following steps:
 
-### Import the Data
+### Prepare the data for use on a neural network model.
 * Import of data to analyze
+* Review the DataFrame, looking for categorical variables that will need to be encoded, as well as columns that could eventually define features and target variables.
+* Encode the dataset’s categorical variables using OneHotEncoder, and then place the encoded variables into a new DataFrame. 
+* Add the original DataFrame’s numerical variables to the DataFrame containing the encoded variables.
+* Using the preprocessed data, create the features (X) and target (y) datasets.
+* Split the features and target sets into training and testing datasets.
+* Use scikit-learn's StandardScaler to scale the features data.
 
-### Prepare the Data
-* Split the data into Training and Testing Sets
+### Compile and evaluate a binary classification model using a neural network.
+* Create a deep neural network by assigning the number of input features, the number of layers, and the number of neurons on each layer using Tensorflow’s Keras.
+* Compile and fit the model using the binary_crossentropy loss function, the adam optimizer, and the accuracy evaluation metric.
+* Evaluate the model using the test data to determine the model’s loss and accuracy.
+* Save and export your model to an HDF5 file
 
-### Create a Logistics Regression model with original data
-* How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
-
-### Create a Logistics Regression model with resampled training data
-* How well does the logistic regression model, fit with oversampled data, predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
-
-### Write a Credit Risk Analysis Report
-* **Overview of the analysis:** Explains the purpose of the analysis.
-* **Results:** Describes the balanced accuracy scores and the precision and recall scores of both machine learning models.
-* **Summary:** Summary of the results from the machine learning models. Compares the two versions of the dataset predictions. Includes recommendations for the model to use, if any, on the original vs. the resampled data.
-
+### Optimize the neural network model.
+* Define three new deep neural network models (resulting in the original plus 3 optimization attempts). With each, try to improve on your first model’s predictive accuracy.
+* Excecuted model with removing 1 of the columns every run, to see if there are any columns that have limited impact on the model
+* Add an additional hidden layer and run the model with different amounts of hidden nodes and evaluate the results
+* Change activation functions for the hidden layers and change the number of epoch in the training regimen and evaluate the results. 
 
 ## Contributor(s)
 
