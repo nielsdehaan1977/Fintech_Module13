@@ -77,7 +77,7 @@ Jupyter Lab can be started by:
 1. Activate your developer environment in Terminal or Git Bash (already done in step 1)
 2. Type "jupyter lab --ContentsManager.allow_hidden=True" press enter (This will open Jupyter Lab in a mode where you can also see hidden files)
 
-![JupyterLab](https://github.com/nielsdehaan1977/Fintech_Module12/blob/main/Images/JupyterLab.PNG)
+![JupyterLab](https://github.com/nielsdehaan1977/Fintech_Module13/blob/main/Images/JupyterLab.PNG)
 
 
 ## Usage
